@@ -10,7 +10,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, apiurl'); // Add 'apiurl' header
   next();
-});
+});  
+
 
 // Route to proxy server
 app.get('/proxyserver', async (req, res) => {
